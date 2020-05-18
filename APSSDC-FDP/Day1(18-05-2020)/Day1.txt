@@ -1,0 +1,128 @@
+Good Morning All:
+==============
+
+Today Concepts:
+
+    -->opp's in python
+        -->class:
+            -->group of member variales and member functions
+                --> class class_name:
+                        list of varibles
+                        methods
+
+
+
+
+
+        -->objects:
+            instance of a class
+            in java: class_name obj_name = new class_name()
+            in python : obj_name = class_name()
+
+        --->constructors:
+            without using object we will methods
+            in java: class name should be same as method name
+            in python we will use one special method to define constructors
+             i.e, __init__(self)
+
+
+
+
+
+
+
+            
+        -->inheritance:
+             inheriting something from parent class to child class
+             class Parent():
+                 a,b=10,20
+
+            class Child(Parent1,Parent2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        -->packages and modules
+            package: ->that is folder
+                            -->it is a collection of modules
+            module:
+                --> it is .py file
+
+        class init:
+            def __abs__():
+
+            def __add__():
+            def __and__():
+
+        class init:
+            def add():
+            def sub()
+
+        def add()
+        def sub()
+        --types of models
+            -->default modules like re,request,httplib,pillow,image,os,keywords
+                import re
+                import os
+
+            -->user defined modules:
+                use can create his own modules
+
+-->ways to access modules
+        --> from Day1(18-05-2020) import cons1,cons2
+        --> from Day1(18-05-2020).cons1 import Hello,msg
+        -->from Day1(18-05-2020).inher1 import *
+        -->from Day1(18-05-2020).inher1.A import *
+
+
+
+
+
+
+
+        
+
+
+
+
+                
+
+
+
+
+
+
+
+            
+            
+
+
+
+
+
+                
+                
+
+
+
+
+
+
+
+
+
+
+        
+
