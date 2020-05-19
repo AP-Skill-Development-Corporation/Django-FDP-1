@@ -1,0 +1,57 @@
+Good Morning All:
+===============
+Packages and Modules with examples:
+
+==> Django:
+    -->it is framework using to develop web applications like gmail,google,facebook
+        javatpoints,w3schools etc.
+
+    --> it is build with python that mean it is a python module
+    --> to develop web appications we have django or flask
+    
+    --> each and every framwork should follow structure i.e MVC
+        m-model,v-view,c-controller
+        model-in this model i will strore all database connections
+        views - in this views part i will store all UI(.html files)
+        controller - here we will keep our business logic(here we will check users request
+                                                          based on that request it will give response )
+    --> django follows MVT:
+
+                    -->M-Model: for db connection
+                    -->urls.py: before going to views.py urls.py will check coming
+                        requests are valid or not,if that is valid it pass that request to views.py
+                        otherwise it will shows error i.e request is not valid
+                    -->V-View: here we will keep our business logic(here we will check users request
+                                                          based on that request it will give response )
+                    -->T-Templates: all html files
+    -->Architecture of DJango:
+    --> we have to install django:
+        -->we have to command prompt
+        --> pip install django
+                    or
+            pip install django == 2.2
+
+    
+    -->project creation:
+            -->first we have to choose a location to create a project
+            --> from that location we have to open command prompt
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+        
