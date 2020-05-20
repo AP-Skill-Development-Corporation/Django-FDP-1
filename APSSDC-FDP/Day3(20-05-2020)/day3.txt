@@ -1,0 +1,82 @@
+Good morning all:
+===============
+    ---> project creation:
+            --> we have to choose project location
+            --> from that location we have command prompt
+            --> run command i.e
+                    django-admin startproject projectname
+                    --> it will generate two diff files
+                            - folder with project name
+                                -- this project belongs to admin part
+                                    (update,delete)
+                                    -- here you can find 4 diff files
+                                        -->__init__.py: this file will convey to python i.e
+                                            consider this file as a python file
+                                        -->settings.py: we make all cjanges in this files
+                            - manage.py: it is command line utility
+                                - we will use this file to run our server,for creating users app
+                --> we have to run servever
+                    -->open cmd from inside your project
+                    --> python manage.py runserver
+                            or
+                            python manage.py runserver 9999
+
+                    
+                --> app creation:
+                        -> we have to open cmd prompt inside project lacation
+                        --> python manage.py startapp appname
+                                --> after this step
+                                        it will generate few files those are:
+                                            -->migrations: it will acts as a interface between dajngo app
+                                                and database(orm to sql)
+                                                --> all database  related files
+                                            -->__init__.py: just consider this app isalo a python file
+                                            -->admin.py: by usign this file only admin can able
+                                                        to access users table
+
+                                            --->app.py : app configuration will be happen here
+                                            --->models.py: here we store all db related logic
+                                            -->viwes.py: here will write our main logic
+
+                                -->after creating app we have to register it inside our settings.py
+
+                    -->urls mapping:
+                        --> to create new url we have to use path() which is calling from
+                                from django.urls import path
+                        --> for these path function we have to pass 3 diff arguments
+                                -->url name like 'signup/'
+                                -->function name
+                                -->name of the url(name='signUp')
+
+
+
+
+                                
+
+
+
+                                            
+
+
+
+
+
+
+
+                                            
+
+
+                                                
+
+
+
+
+
+                        
+
+
+
+
+
+
+                        
