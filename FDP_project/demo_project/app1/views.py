@@ -11,3 +11,36 @@ def data2(request,name):
 	return HttpResponse("This is Strin data"+name)
 def data3(request,id,name):
 	return HttpResponse("my name is "+name+"and My age is"+str(id))
+def info(request):
+	# data={
+	# 		"name":"vijay",
+	# 		"roll":102,
+	# 		"native":"kadapa"
+	# 		}
+	# data2={
+	# 		"name":"kumar",
+	# 		"roll":103,
+	# 		"native":"Proddatur"
+	# 		}
+	# data={
+	# 		"info":[
+	# 			"data1":{
+	# 				"name":"vijay",
+	# 				"roll":102,
+	# 				"native":"kadapa"
+	# 			},
+	# 		"data2":{
+	# 			"name":"kumar",
+	# 			"roll":103,
+	# 			"native":"Proddatur"
+	# 			}
+	# 		]
+	# }
+	data={
+		[
+			"name":"vijay",
+			"roll":102,
+			"native":"kadapa",
+		]
+	}
+	return render(request,'app1/info.html',{data})

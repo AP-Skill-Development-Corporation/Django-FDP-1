@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::info-page::</title>
+</head>
+<body>
+	<!-- <h1>Name:{{data.name}}</h1>
+	<h1>Roll:{{data.roll}}</h1>
+	<h1>Native:{{data.native}}</h1>
+	<h1>Name:{{data2.name}}</h1>
+	<h1>Roll:{{data2.roll}}</h1>
+	<h1>Native:{{data2.native}}</h1> -->
+	{%for i in data %}
+		<h1>Name:{{i.info.name}}</h1>
+		<h1>Roll:{{i.info.roll}}</h1>
+		<h1>Native:{{i.info.native}}</h1>
+	{% endfor%}
+
+</body>
+</html>

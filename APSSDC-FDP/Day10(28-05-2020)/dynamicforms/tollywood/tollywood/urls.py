@@ -1,4 +1,4 @@
-"""demo_project URL Configuration
+"""tollywood URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -15,13 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1 import views
+from Movies import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hi/',views.hi,name="hi"),
-    path('hello/',views.hello,name="hello"),
-    path('data1/<int:id>/',views.data1),
-    path('data2/<str:name>/',views.data2),
-    path('data3/<int:id>/<str:name>',views.data3),
-    path('info/',views.info,name="info"),
+    path('moviesreg/',views.moviesreg,name='moviesreg'),
 ]
