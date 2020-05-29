@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Display page::</title>
+</head>
+<body>
+		<h1>This List Of Popular Movies in tollywood</h1>
+		<a href="{% url 'moviereg' %}"> adddata/insert data</a>
+		<table border="2px">
+			<thead>
+				<tr>
+					<td>Id</td>
+					<td>MovieName</td>
+					<td>HeroName</td>
+					<td>Heroine Name</td>
+					<td>Producer Name</td>
+					<td>Director Name</td>
+					<td>Budget</td>
+					<td>No of Workers</td>
+					<td>Update/Edit</td>
+
+					<td> <a href="{% url 'deleteall' %}">Delete</a></td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for row in Mdata %}
+					<tr>
+						<td>{{row.id}}</td>
+						<td>{{row.moviename}}</td>
+						<td>{{row.heroname}}</td>
+						<td>{{row.heroinename}}</td>
+						<td>{{row.producername}}</td>
+						<td>{{row.Directorname}}</td>
+						<td>{{row.Budget}}</td>
+						<td>{{row.noofworkers}}</td>
+						<td><a href="{% url 'update' row.id %}">Update/Edit</a></td>
+						<td><a href="{% url 'delete' row.id %}">Delete</a></td>
+					</tr>
+				{% endfor%}
+			</tbody>
+		</table>
+</body>
+</html>
