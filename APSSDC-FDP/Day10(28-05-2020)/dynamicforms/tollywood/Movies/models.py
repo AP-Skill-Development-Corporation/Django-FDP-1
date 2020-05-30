@@ -8,4 +8,5 @@ class Movie(models.Model):
 	producername=models.CharField(max_length=50)
 	Directorname=models.CharField(max_length=50)
 	Budget=models.FloatField(max_length=50)
+	image=models.ImageField(null=True)
 	noofworkers=models.IntegerField()

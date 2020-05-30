@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,7 @@
 					<td>Producer Name</td>
 					<td>Director Name</td>
 					<td>Budget</td>
+					<td>Poster of Movie</td>
 					<td>No of Workers</td>
 					<td>Update/Edit</td>
 
@@ -32,6 +34,7 @@
 						<td>{{row.producername}}</td>
 						<td>{{row.Directorname}}</td>
 						<td>{{row.Budget}}</td>
+						<td><img src="/static/images/{{row.image}}" height="100px" width="100px"></td>
 						<td>{{row.noofworkers}}</td>
 						<td><a href="{% url 'update' row.id %}">Update/Edit</a></td>
 						<td><a href="{% url 'delete' row.id %}">Delete</a></td>

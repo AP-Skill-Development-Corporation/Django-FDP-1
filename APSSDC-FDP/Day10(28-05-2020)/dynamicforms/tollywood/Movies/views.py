@@ -5,7 +5,7 @@ from Movies.models import Movie
 # Create your views here.
 def moviereg(request):
 	if request.method =="POST":
-		data=Movies_form(request.POST)
+		data=Movies_form(request.POST,request.FILES)
 		if data.is_valid():
 			data.save()
 			return redirect('/display')

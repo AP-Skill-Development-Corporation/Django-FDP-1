@@ -13,15 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path
-from Movies import views
-
+import Movies.views as Mv
+from tollywood import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('moviereg/',views.moviereg,name='moviereg'),
-    path('display/',views.display),
-    path('update/<int:id>/',views.update,name='update'),
-    path('delete/<int:id>/',views.delete,name='delete'),
-    path('deleteall/',views.deleteall,name='deleteall'),
+    path('moviereg/',Mv.moviereg,name='moviereg'),
+    path('display/',Mv.display),
+    path('update/<int:id>/',Mv.update,name='update'),
+    path('delete/<int:id>/',Mv.delete,name='delete'),
+    path('deleteall/',Mv.deleteall,name='deleteall'),
 ]
